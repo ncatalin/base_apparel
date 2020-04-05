@@ -161,13 +161,16 @@ form.active-error small {
   .left h1 {
     margin-left: 0;
     font-size: 2rem;
+    width: 100%;
   }
   .left p {
     margin-left: 0;
+    width: 100%;
   }
   .left form {
     margin-top: 0;
     margin-left: 0;
+    width: 100%;
   }
   .left form input {
     height: 40px;
