@@ -1,0 +1,13 @@
+.text {
+  &-primary {
+    @include text-color($clr-primary);
+  }
+
+  &-primary-soft {
+    @include text-color($clr-primary-soft);
+  }
+
+  &-secondary {
+    @include text-color($clr-secondary);
+  }
+}

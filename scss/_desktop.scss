@@ -1,123 +1,67 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: $main-font;
-  font-size: $font-size;
-  margin: 0;
-  padding: 0;
-  background-image: linear-gradient($main-linear);
-}
-
-.container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  min-height: 100vh;
-
-}
-
-.logo-mobile {
-  display: none;
-}
-
-.logo img {
-  width: 150px;
-  margin: 30px 50px;
-}
-
-.left {
-  background: url('../img/bg-pattern-desktop.svg');
-  background-size: cover;
-  background-position: center center;
-  padding: 3.5rem;
-
-  h1 {
-
-    font-size: 4.3rem;
-    margin-left: 50px;
-    width: 60%;
-    letter-spacing: 15px;
-    margin-block-end: 0;
-
-    span {
-      color: $primary-des-red;
-      font-weight: $fw-3;
-    }
-  }
-
-  p {
-    margin-left: 50px;
-    width: 60%;
-    color: $primary-des-red;
-    line-height: 1.4;
-  }
-}
-
-.right {
-  background: url('../img/hero-desktop.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-form {
-  margin-top: 50px;
-  margin-left: 50px;
-  position: relative;
-  width: 70%;
-
-  input {
-    border: 1px solid $primary-des-red;
-    border-radius: 2rem;
-    font-size: 1rem;
-    padding: 1rem 1rem;
-    width: 100%;
-    height: 55px;
-    color: $primary-des-red;
-
-    &:focus {
-      outline: none;
-      border: 2px solid $primary-soft-red;
-    }
-  }
-
-  button {
-    background: linear-gradient($second-linear);
-    border: none;
-    border-radius: 3rem;
-    cursor: pointer;
-    padding: 1rem 2rem;
-    height: 55px;
-    width: 100px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 1;
-
-    &:hover {
-      opacity: 0.6;
-    }
-  }
-
-  .error {
+@media (min-width: 1000px) {
+  .mobile-logo {
     display: none;
-    position: absolute;
-    top: 15px;
-    right: 105px;
   }
 
-  &.active-error .error {
-    display: block;
-  }
-
-  small {
-    color: $primary-soft-red;
+  .hero-img-mobile {
     display: none;
-    margin-top: 10px;
-    margin-left: 20px;
   }
 
-  &.active-error small {
-    display: block;
+  .hero {
+    display: flex;
   }
+
+  .left {
+    background: url("../img/bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 60%;
+
+    .desktop-logo {
+      display: block;
+      margin-bottom: 8rem;
+    }
+
+    .container {
+      height: 100vh;
+      max-width: 1000px;
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    h1,
+    .hero-text {
+      text-align: left;
+    }
+
+    h1 {
+      font-size: 4rem;
+    }
+
+    p,
+    form {
+      width: 59%;
+    }
+
+    .hero-form {
+      button {
+        padding: 0.8rem 2.1rem;
+      }
+    }
+  }
+
+  .right {
+    width: 40%;
+    display: block;
+    height: 100vh;
+
+    .hero-desktop {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+.error-icon {
+  right: 70px;
 }

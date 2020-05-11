@@ -3,43 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="favicon-32x32.png" type="image/png" />
+    <link rel="icon" href="favicon-32x32.png" type="image/png" sizes="32x32" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Base Apparel</title>
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
   </head>
-
-  <body>
-    <div class="logo logo-mobile">
-      <img src="img/logo.svg" alt="Company Logo" />
-    </div>
-    <div class="container">
-      <div class="left">
-        <div class="logo logo-desktop">
-          <img src="img/logo.svg" alt="Company Logo" />
+  <div class="mobile-logo">
+    <img src="img/logo.svg" alt="Base Apparel" />
+  </div>
+  <div class="hero">
+    <div class="left">
+      <div class="mobile-only">
+        <img
+          src="img/hero-mobile.jpg"
+          alt="company employee"
+          class="hero-img-mobile"
+        />
+      </div>
+      <div class="container">
+        <div class="desktop-logo">
+          <img src="img/logo.svg" alt="Base Apparel" />
         </div>
-        <h1><span>WE'RE</span> COMING SOON</h1>
-        <p>
+        <h1 class="hero-title text-primary">We're</h1>
+        <h1 class="hero-title text-secondary">coming</h1>
+        <h1 class="hero-title text-secondary">soon</h1>
+        <p class="hero-text">
           Hello fellow shoppers! We're currently building our new fashion store.
           Add your email below to stay up-to-date with announcements and our
           launch deals.
         </p>
-        <form id="main-form">
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Email Address"
-          />
-          <img src="img/icon-error.svg" alt="error" class="error" />
-          <button type="submit">
-            <img src="img/icon-arrow.svg" alt="Arrow for submit button" />
-          </button>
-          <small>Please provide a valid email</small>
+        <form action="#" class="hero-form" id="main-form">
+          <div class="form-control">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email Address"
+            />
+            <img src="img/icon-error.svg" alt="error icon" class="error-icon" />
+            <button type="submit">
+              <img src="img/icon-arrow.svg" alt="arror for submit button" />
+            </button>
+            <small class="error-msg">
+              Please provide a valid email
+            </small>
+          </div>
         </form>
       </div>
-      <div class="right"></div>
     </div>
-
+    <div class="right">
+      <img
+        src="img/hero-desktop.jpg"
+        alt="Company employee"
+        class="hero-desktop"
+      />
+    </div>
+  </div>
+  <body>
     <script src="js/main.js"></script>
   </body>
 </html>
