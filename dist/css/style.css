@@ -36,6 +36,7 @@ img {
 .hero-img-mobile {
   display: block;
   width: 100%;
+  object-fit: cover;
 }
 
 .left {
@@ -184,6 +185,7 @@ input::placeholder {
   .right .hero-desktop {
     height: 100%;
     width: 100%;
+    object-fit: cover;
   }
 }
 
